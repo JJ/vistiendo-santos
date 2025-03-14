@@ -9,6 +9,7 @@
         body {
             background-color: #f5f5dc;
             font-family: 'Times New Roman', Times, serif;
+            mix-blend-mode: multiply;
         }
         .header {
             background-image: url('images/background.jpg');
@@ -41,7 +42,29 @@
     <main class="content container">
         <section>
             <h2>Muy pronto</h2>
+            <img src="images/flaminica.png" alt="Flaminica" class="reveal-image img-fluid">
 
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var img = document.querySelector('.reveal-image');
+                    img.classList.add('opacity-0');
+                    setTimeout(function() {
+                        img.classList.remove('opacity-0');
+                        img.classList.add('transition-opacity', 'opacity-100');
+                    }, 100);
+                });
+            </script>
+            <style>
+                .opacity-0 {
+                    opacity: 0;
+                }
+                .opacity-100 {
+                    opacity: 1;
+                }
+                .transition-opacity {
+                    transition: opacity 2s ease-in-out;
+                }
+            </style>
         </section>
         <section>
             <h2>Galería</h2>
