@@ -1,3 +1,7 @@
+:root {
+    --bs-breadcrumb-divider: "➡️";
+}
+
 body {
     background-color: #f5f5dc;
     font-family: 'Times New Roman', Times, serif;
