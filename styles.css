@@ -25,6 +25,8 @@ body {
 
 .content {
     padding: 20px;
+    background-image: url('images/background-low.jpg');
+    background-repeat: repeat;
 }
 
 .footer {
@@ -35,9 +37,6 @@ body {
 }
 
 .card {
-    background-image: url('images/background-low.jpg');
-    background-size: cover;
-    background-position: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
